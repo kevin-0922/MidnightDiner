@@ -2,4 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="dividerColor">#DDDDDD</color>
+    <color name="tagsTextColor">#FF9933</color>
+    <color name="backgroundColor">#F8F6F1</color>
+    <color name="ingredient_amount_color">#000000</color> <!-- 黑色，您可以根据需要调整 -->
+    <color name="commenter_color">#000000</color> <!-- 黑色，您可以根据需要调整 -->
+    <color name="comment_stars_color">#000000</color> <!-- 黑色，您可以根据需要调整 -->
+    <color name="colorPrimary">#e8b83e</color>
+    <color name="colorPrimaryDark">#FF9933</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="orange">#FF9933</color>
+
+
 </resources>

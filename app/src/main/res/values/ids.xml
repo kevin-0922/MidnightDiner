@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ingredientsTextView" type="id" />
+    <item name="tagsTextView" type="id" />
+    <item name="stepsTextView" type="id" />
+</resources>

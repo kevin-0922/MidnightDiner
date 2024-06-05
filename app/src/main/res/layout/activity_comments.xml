@@ -1,45 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/comments"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CommentsActivity">
+    android:background="#F8F6F1"
+    android:padding="16dp">
 
-    <!-- Comments RecyclerView -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/commentsRecyclerView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/commentInputLayout" />
-
-    <!-- Input layout for user comments -->
     <LinearLayout
-        android:id="@+id/commentInputLayout"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_background"
+        android:layout_margin="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暱稱"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:textColor="#FF9933"/>
+
+        <EditText
+            android:id="@+id/commenterEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="評分"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:textColor="#FF9933"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:isIndicator="false"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="評論"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:textColor="#FF9933"/>
 
         <EditText
             android:id="@+id/commentEditText"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="@string/write_a_comment" />
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:minHeight="100dp"
+            android:textColor="#333333"
+            android:gravity="top"/>
 
         <Button
-            android:id="@+id/submitCommentButton"
-            android:layout_width="wrap_content"
+            android:id="@+id/saveCommentButton"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/submit" />
+            android:text="保存評論"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FF9933"
+            android:textColor="@android:color/white"
+            android:padding="12dp"/>
     </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
