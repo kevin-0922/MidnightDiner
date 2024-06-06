@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MidnightDinner</string>
+    <string name="search_for_recipes">Search for recipes</string>
+    <string name="list_of_ingredients">List of ingredients</string>
+    <string name="steps">Step</string>
+    <string name="step_by_step_instructions">Step by step instructions</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="recipe_description">Recipe Description</string>
+    <string name="recipe_title">Recipe Title</string>
+    <string name="write_a_comment">COMMENT</string>
+    <string name="submit">Submit</string>
+    <string name="search">Search</string>
+    <string name="categories">Categories</string>
+    <string name="recommended">Recommended</string>
+    <string name="home">Home</string>
+    <string name="Search_Recipe">Search recipe</string>
+    <string name="Popular_Recipe">Popular recipe</string>
+    <string name="nick_name">NICKNAME</string>
+    <string name="give_star">STAR</string>
+    <string name="give_comment">COMMENT</string>
+    <string name="send_comment">SEND</string>
+</resources>

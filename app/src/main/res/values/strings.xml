@@ -1,18 +1,18 @@
 <resources>
-    <string name="app_name">MidnightDiner</string>
-    <string name="search_for_recipes">Search for recipes</string>
-    <string name="list_of_ingredients">List of ingredients</string>
+    <string name="app_name">深夜小廚房</string>
+    <string name="search_for_recipes">搜尋食譜</string>
+    <string name="list_of_ingredients">食材列表</string>
     <string name="steps">步驟</string>
-    <string name="step_by_step_instructions">Step by step instructions</string>
+    <string name="step_by_step_instructions">按部就班</string>
     <string name="ingredients">食材</string>
-    <string name="recipe_description">Recipe Description</string>
-    <string name="recipe_title">Recipe Title</string>
+    <string name="recipe_description">食譜簡述</string>
+    <string name="recipe_title">食譜名稱</string>
     <string name="write_a_comment">評論</string>
-    <string name="submit">Submit</string>
-    <string name="search">Search</string>
+    <string name="submit">送出</string>
+    <string name="search">搜尋</string>
     <string name="categories">食譜分類</string>
     <string name="recommended">熱門的</string>
-    <string name="home">Home</string>
+    <string name="home">首頁</string>
     <string name="Search_Recipe">搜尋食譜</string>
     <string name="Popular_Recipe">熱門食譜</string>
     <string name="midnight_diner">深夜小廚房</string>
