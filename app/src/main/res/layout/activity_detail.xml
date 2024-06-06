@@ -108,7 +108,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="食材"
+                            android:text="@string/ingredients"
                             android:textSize="20sp"
                             android:textStyle="bold"/>
 
@@ -138,7 +138,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="步驟"
+                            android:text="@string/steps"
                             android:textSize="20sp"
                             android:textStyle="bold"/>
 
@@ -168,7 +168,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="評論"
+                            android:text="@string/give_comment"
                             android:textSize="20sp"
                             android:textStyle="bold"/>
 
@@ -189,7 +189,7 @@
                     android:layout_marginTop="16dp"
                     android:backgroundTint="@color/white"
                     android:textColor="@color/black"
-                    android:text="評論"/>
+                    android:text="@string/give_comment"/>
 
             </LinearLayout>
         </ScrollView>

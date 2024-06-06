@@ -5,14 +5,13 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
 
 class RecommendedActivity : AppCompatActivity() {
@@ -28,7 +27,7 @@ class RecommendedActivity : AppCompatActivity() {
         }
 
         val recipeDao = RecipeDao(this)
-        val recipes = recipeDao.getTopRatedRecipes(5)
+        val recipes = recipeDao.getTopRatedRecipes(8)  // Fetching 7 recipes now
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)

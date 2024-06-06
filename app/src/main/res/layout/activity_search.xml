@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/Search"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/searchLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#F8F6F1"
     android:padding="16dp"
-    android:background="#E7E9EC">
+    tools:context=".SearchActivity">
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:queryHint="Search recipes..."
-        android:iconifiedByDefault="false"
-        android:padding="8dp"/>
+        android:queryHint="Search recipes"
+        android:layout_marginBottom="16dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="16dp"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 </LinearLayout>
