@@ -7,7 +7,7 @@ data class Recipe(
     val ingredients: List<String>,
     val tags: List<String>,
     val steps: List<String>,
-    val avgStars: Float? = null // 新增字段，表示平均星级
+    val avgStars: Float? = null
 )
 
 

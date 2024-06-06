@@ -19,7 +19,6 @@ class RecipeAdapter(private val recipes: List<Recipe>) : RecyclerView.Adapter<Re
     override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
         val recipe = recipes[position]
 
-        // 四舍五入星级并生成星星符号
         val avgStars = recipe.avgStars?.let { Math.round(it) } ?: 0
         val stars = "⭐".repeat(avgStars)
 

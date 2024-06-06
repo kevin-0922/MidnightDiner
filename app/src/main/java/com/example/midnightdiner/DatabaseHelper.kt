@@ -8,11 +8,11 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
 
     companion object {
         private const val DATABASE_NAME = "recipeApp.db"
-        private const val DATABASE_VERSION = 2  // 更新版本号
+        private const val DATABASE_VERSION = 2
     }
 
     override fun onCreate(db: SQLiteDatabase) {
-        // 创建食谱 Table
+
         val createRecipeTable = """
             CREATE TABLE Recipe (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -26,7 +26,6 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         """.trimIndent()
         db.execSQL(createRecipeTable)
 
-        // 创建评论 Table
         val createCommentTable = """
             CREATE TABLE Comment (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,

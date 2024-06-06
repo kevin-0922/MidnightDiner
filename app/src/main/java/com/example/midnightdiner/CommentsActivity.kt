@@ -46,7 +46,7 @@ class CommentsActivity : AppCompatActivity() {
         val commentText = commentEditText.text.toString()
 
         if (commenter.isBlank() || commentText.isBlank()) {
-            Snackbar.make(saveCommentButton, "請填寫所有字段", Snackbar.LENGTH_LONG).show()
+            Snackbar.make(saveCommentButton, "請填寫所有資料", Snackbar.LENGTH_LONG).show()
             return
         }
 
